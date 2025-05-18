@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Molli Writes Script;
+    src: url(../fonts/Molli\ Writes\ Script.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+    font-family: Molli Writes Script;
+}
+
+main {
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.photo-container {
+    text-align: center;
+}
+
+.photo {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: orange;
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.photo:hover {
+    transform: rotate(3deg) scale(1.07);
+    filter: blur(0);
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.photo1 {
+    background-image: url(../img/Паук\ скакун\ 1.jpg);
+}
+
+.photo2 {
+    background-image: url(../img/Паук\ скакун\ 2.webp);
+}
+
+.photo3 {
+    background-image: url(../img/Паук\ скакун\ 3.jpg);
+}
+
+.photo4 {
+    background-image: url(../img/Паук\ скакун\ 4.jpg);
+}
+
+.photo5 {
+    background-image: url(../img/Паук\ скакун\ 5.webp);
+}
+
+.photo6 {
+    background-image: url(../img/Паук\ скакун\ 6.jpg);
+}
+
+.photo7 {
+    background-image: url(../img/Паук\ скакун\ 7.Webp);
+}
+
+.photo8 {
+    background-image: url(../img/Паук\ скакун\ 8.jpg);
+}
+
+.photo9 {
+    background-image: url(../img/Паук\ скакун\ 9.png);
+}
+
+.photo10 {
+    background-image: url(../img/Паук\ скакун\ 10.jpg);
+}
+
+.photo11 {
+    background-image: url(../img/Паук\ скакун\ 11.jpg);
+}
+
+.photo12 {
+    background-image: url(../img/Паук\ скакун\ 12.jpg);
+}
+
+.photo-container:hover .photo {
+    transform: rotate(3deg) scale(1.07);
+    filter: blur(0);
+}
